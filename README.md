@@ -1,5 +1,5 @@
 # puzzle-solver
-Preliminary idea is to use a picture of a single empty space in a puzzle and pictures of all the remaining pieces to find the one with the right shape.
+The preliminary idea is to use a picture of a single empty space in a puzzle and pictures of all the remaining pieces to find the one with the right shape.
 
 
 Steps: 
@@ -14,3 +14,12 @@ Steps:
 
 Acknowledgements:
 The performance and success of this program (and specifically the model) depends on both the cut quality of the puzzle pieces and the picture resolution. With that being said, a higher resolution also means more pixels to process and convert to keys, which would make the program run much longer. At the moment, though, I'm not too worried about complexity.
+
+
+
+ALTERNATIVELY:
+Train a machine learning model to identify and draw the exact shape of each puzzle piece.
+I could then write an algorithm that matches the shape of the missing piece in the puzzle with the matching shape out of the available options.
+
+An advanced version of this would be an algorithm that can 'piece' these shapes together, possibly using the images on each piece to help create the entire puzzle from pictures of individual pieces.
+An even more advanced version of this ^^ would be the same thing except using a singular picture of all the pieces laid out in one picture (with different orientations even) and the algorithm would "piece" them together.
